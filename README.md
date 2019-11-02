@@ -9,7 +9,7 @@ http.createServer(function (req, resp) {
                
                 resp.writeHead(200, { "Content-Type": "text/html" });
                 //request to order icecream
-                resp.write("<html><head><title>Hello User </title></head><body>Want to order icecream? Click <a href='/calc'here</a></body><html>");
+                resp.write("<html><head><title>Hello User </title></head><body>Want to order icecream? Click <a href='/calc'>here</a></body><html>");
                 resp.end();
             }
             break;
@@ -18,7 +18,6 @@ http.createServer(function (req, resp) {
         default:
             break;
     }
-    resp.end();
+   
 } 
 ).listen(port);
-
